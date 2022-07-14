@@ -1,36 +1,32 @@
 # Intersection
 
-Write a function that finds all the values shared between two arrays.
+The intersection is a list of distinct numbers/elements which are present in
+both the arrays. The numbers/elements in the intersection can be in any order.
 
 ---
 
-## Docstring
+## Strategy
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that
-helps you understand:
+I chose to using set method to solve this challenge because they're quite easy
+to understand.
 
-```js
-/**
- * Creates an array of values that are in both the first and the second arrays.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to include.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * intersection([2, 1], [2, 3]);
- * // -> [2]
- *
- * @example
- *
- * intersection([2, 1, 2], [2, 3]);
- * // -> [2]
- */
-```
+---
 
-> Docstring is adapted from
-> [lodash's intersection](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7498)
+## Implementation
+
+Intersection is performed between `array1` and `array2`.
+
+- The array elements are converted into `Set` elements using the `new Set()`
+  constructor.
+- The `for...of` loop is used to iterate over the second `Set` elements.
+- The `has()` method is used to check if the element is in the first `Set`.
+- If the element is present in the first `Set`, that element is added to the
+  `intersectionResult` array using the `push()` method.
+
+---
+
+## Use Cases
+
+---
+
+## Inspiration
