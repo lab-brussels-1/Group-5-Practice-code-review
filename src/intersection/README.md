@@ -27,6 +27,32 @@ Intersection is performed between `array1` and `array2`.
 
 ## Use Cases
 
+```js
+const intersection = (arr1, arr2) => {
+  const setA = new Set(arr1);
+  const setB = new Set(arr2);
+
+  const intersectionResult = [];
+
+  for (const i of setB) {
+    if (setA.has(i)) {
+      intersectionResult.push(i);
+    }
+  }
+
+  return intersectionResult;
+};
+
+intersection([2, 1, 2], [2, 3]);
+// intersection result -> [2]
+```
+
 ---
 
 ## Inspiration
+
+- [Techie Delight](https://www.techiedelight.com/find-intersection-arrays-javascript/)
+  describing few method on how to find the intersection of two arrays in
+  JavaScript.
+- [The Coding Odyssey](https://www.youtube.com/watch?v=RvmB_PfhYrA) for some
+  visual solution of intersection on youtube.
