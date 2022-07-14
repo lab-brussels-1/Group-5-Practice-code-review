@@ -1,4 +1,5 @@
 import { intersection } from './intersection.js';
+
 describe('intersection: this function return an array that is composed of elements they have in common', () => {
   it('Should return an empty array when empty array provided', () => {
     expect(intersection([], [])).toEqual([]);
