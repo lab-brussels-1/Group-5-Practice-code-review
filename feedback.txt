@@ -1,0 +1,3 @@
+I can only see one PR tht is still open from Fenny. No one else made any changes to the repo in the main branch.
+Her solution passes the CI checks and a review was requested. The solution has tests so great! 
+I see some people commited to their own branch but did not merge. The solution is only valid if merged to main
